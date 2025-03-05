@@ -5,10 +5,6 @@ if len(sys.argv) < 2:
     sys.exit(1)
 
 def main():
-    #count=wordcount("./books/frankenstein.txt")
-    #print(f"{count} words found in the document")
-    #print(cc("./books/frankenstein.txt"))
-    #sorted=dict_sorter("./books/frankenstein.txt")
     print("============ BOOKBOT ============")
     print(f"Analyzing book found at {sys.argv[1]}")
     print("----------- Word Count ----------")
