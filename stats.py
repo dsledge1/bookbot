@@ -27,4 +27,33 @@ def cc(file):
             cd[c]+=1
         return cd
 
-        #return characters    
+
+def dict_sorter(file):
+    d=cc(file)
+    keys=d.keys()
+    newlist = []
+    for key in keys:
+        newdict={}
+        newdict[key]=d[key]
+        newlist.append(newdict)
+    newlist.sort(reverse=True, key=sort_on)
+    return newlist
+
+def sort_on(dict):
+    return dict["count"]
+
+def dict_sorter(file):
+    d=cc(file)
+    keys=d.keys()
+    newlist = []
+    for key in keys:
+        newdict={}
+        newdict['char']=key
+        newdict['count']=d[key]
+        newlist.append(newdict)
+    newlist.sort(reverse=True, key=sort_on)
+    return newlist
+
+
+
+
